@@ -1,0 +1,1 @@
+Program that will ask a users name, age, and reddit username. Output the information. Store into a file 
