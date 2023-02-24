@@ -7,8 +7,8 @@ def common_chars(input1, input2):
     for c in common:
         freq[c] = input1.count(c) + input2.count(c)
     
-    # Convert the frequency dictionary to a list of (char, freq) tuples and sort it by frequency
-    freq_list = sorted(freq.items(), key=lambda x: x[1], reverse=True)
+    # Convert the frequency dictionary to a list of (char, freq) tuples and sort it by frequency desc
+    freq_list = sorted(freq.items(), key=lambda x: x[1], reverse=True) #key=lambda x: x[1] ascending
     
     output = ''
     for c, freq in freq_list:
